@@ -1,25 +1,28 @@
 # 🧱 7-1 Style Architecture Showcase
 
-This repo demonstrates how to implement the **7-1 style architecture pattern** in various UI frameworks.
+This repository demonstrates how to apply the **7-1 style architecture pattern** across different UI frameworks — including **SCSS**, **XAML**, and **QML**.
 
-> The 7-1 architecture (7 folders + 1 entry file) is a modular design system organization method originally popularized in SCSS. This repository adapts it to other frameworks for scalable and maintainable styling.
+> The "7-1 architecture" refers to organizing UI styles into 7 modular folders + 1 entry file (`main`), promoting maintainability, scalability, and separation of concerns.
 
 ---
 
 ## 🔧 Included Frameworks
 
-| Framework   | Folder  | Notes                                |
-| ----------- | ------- | ------------------------------------ |
-| SCSS / Sass | `/scss` | Classic 7-1 pattern with `main.scss` |
-| WPF / XAML  | `/wpf`  | ResourceDictionary modular styling   |
+| Framework                      | Folder  | Notes                                                       |
+| ------------------------------ | ------- | ----------------------------------------------------------- |
+| **SCSS**                       | `/scss` | Classic 7-1 pattern with `main.scss`                        |
+| **XAML (WPF / MAUI / WinUI3)** | `/wpf`  | ResourceDictionary-based styling system                     |
+| **QML (PySide6)**              | `/qml`  | Singleton-based `QtObject` tokens + componentized structure |
 
 ---
 
-## 📦 Goal
+## 📦 Why 7-1?
 
-To provide clear, framework-specific examples of how to apply:
+The 7-1 architecture pattern offers:
 
-- Layered styling
-- Reusable design tokens (colors, fonts, spacing)
-- Modular component styles
-- Theming and vendor overrides
+- **Separation of concerns** – Colors, typography, spacing, and styles are split by purpose
+- **Component-level reusability** – Styles and tokens for components are centralized
+- **Scalability** – Each framework can scale with consistent structure
+- **Framework-agnostic modeling** – Easy to port concepts across technologies
+
+---
